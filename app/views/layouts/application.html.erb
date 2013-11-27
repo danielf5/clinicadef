@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clinicadef</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>                      
+<div class="panel panelSuperior">
+          <h2>Gestion Doctores</h2>
+</div>
+<% flash.each do |key, value|%>
+	<p><%=value%></p>
+<% end %>
+
+<%= yield %>
+
+<div class="panel panelInferior">
+          <p>Clinica Sabanera. Autopista Norte Km 6 | Tel: (571) 8614545</p><br>
+          
+          <a href="">contacto: clisaba@unisabana.edu.co</a>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+
+<%= form_for (@medico) do |m| %>
+<p>
+	<%=m.label :identificacion%>
+	<%=m.text_field :identificacion%>
+</p>
+<p>
+	<%=m.label :nombres%>
+	<%=m.text_field :nombres%>
+</p>
+<p>
+	<%=m.label :apellidos%>
+	<%=m.text_field :apellidos%>
+</p>
+<p>
+	<%=m.label :email%>
+	<%=m.text_field :email%>
+</p>
+<p>
+	<%=m.label :celular%>
+	<%=m.text_field :celular%>
+</p>
+<p>
+	<%=m.label :curriculum%>
+	<%=m.text_area :curriculum%>
+</p>
+<p>
+	<%=m.label :reconocimientos%>
+	<%=m.text_area :reconocimientos%>
+</p>
+<p>
+<%= m.submit "Guardar"%><%= link_to "Cancelar", medicos_path%>
+</p>
+<%end%>

@@ -1,0 +1,15 @@
+<h1>Medicos|<small><%= link_to "Nuevo", new_medico_path %></small></h1>
+<ul>
+	<% @medicos.each do |esp| %>
+	<li>
+		<h3><%=esp.nombres%> <%=esp.apellidos%></h3>
+		<p>
+			<span><%= link_to "Ver", esp%></span>|
+			<span><%= link_to "Modificar", edit_medico_path(esp)%></span>|
+			<span><%= link_to "Eliminar", esp, :confirm => "¿Seguro que desea eliminarlo?", :method => :delete %></span>
+		</p>
+	</li>
+	<%end%>
+</ul>
+
+<p><%= link_to "Volver", especialidads_path%></p>

@@ -1,0 +1,9 @@
+<%= form_for (@especialidad) do |f| %>
+<p>
+	<%=f.label :nombre%>
+	<%=f.text_field :nombre%>
+</p>
+<p>
+<%= f.submit "Guardar"%><%= link_to "Cancelar", especialidads_path%>
+</p>
+<%end%>

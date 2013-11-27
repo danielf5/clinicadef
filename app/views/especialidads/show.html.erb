@@ -1,0 +1,5 @@
+<h1><%= @especialidad.nombre %></h1>
+<span><%= link_to "Ver", @especialidads%></span>|
+<span><%= link_to "Modificar", edit_especialidad_path(@especialidad)%></span>|
+<span><%= link_to "Eliminar", @especialidad, :confirm => "¿Seguro que desea eliminarla?", :method => :delete %></span>
+<p><%= link_to "Volver", especialidads_path%></p>

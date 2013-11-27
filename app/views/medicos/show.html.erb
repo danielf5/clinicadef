@@ -1,0 +1,11 @@
+<h1><%= @medico.nombres %> <%= @medico.apellidos %></h1>
+<ul>
+	<li>Nombres y apellidos:<h3><%=@medico.nombres%> <%=@medico.apellidos%></h3></li>
+	<li>Identificacion:<h3><%=@medico.identificacion%></h3></li>
+	<li>Email:<h3><%=@medico.email%></h3></li>
+	<li>Curriculum:<h3><%=@medico.curriculum%></h3></li>
+	<li>Reconocimientos:<h3><%=@medico.reconocimientos%></h3></li>
+	<li>Celular:<h3><%=@medico.celular%></h3></li>
+	<li>Especialidad:<h3><%=@medico.especialidad_id%></h3></li>
+</ul>
+<p><%= link_to "Volver", medicos_path%></p>
